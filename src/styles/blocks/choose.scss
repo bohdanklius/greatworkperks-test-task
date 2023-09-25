@@ -1,0 +1,27 @@
+.choose {
+    
+    &__section {
+        padding: 0 82px;
+    }
+
+    &__header {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 800;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 768px) {
+    .choose  {
+        &__section {
+            padding: 0 48px;
+        } 
+    }
+}

@@ -1,0 +1,35 @@
+.logo {
+    &__image {
+        // width: 360px;
+        height: 31px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .logo  {
+
+        &__image {
+            height: 20px;   
+        }
+    }
+}
+
+
+@media (max-width: 992px) {
+    .logo  {
+
+        &__image {
+            height: 16px;   
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .logo  {
+        padding-bottom: 18px;
+        
+        &__image {
+            height: 20px;   
+        }
+    }
+}

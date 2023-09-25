@@ -1,0 +1,42 @@
+.tags {
+    &__bar {
+        display: none;
+        margin: 0 18px;
+        border-bottom: 2px solid #ddd;
+    }
+    
+    &__bar-list {
+        display: flex;
+        align-items: center;
+        margin: 0 -18px;
+        padding: 20px 8px 17px;
+        overflow: auto;
+    }
+    
+    &__bar-list li {
+        padding: 0 10px 0 0;
+        list-style: none;
+    }
+    
+    &__bar-list-item {
+        font-size: 12px;
+        display: inline-flex;
+        align-items: center;
+        min-height: 10px;
+        position: relative;
+        white-space: nowrap;
+        padding: 5px 13px;
+        color: #fff;
+        background-color: #30356c;
+        border-radius: 7px;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .tags {
+        &__bar  {
+            display: flex;
+        }
+    }
+}

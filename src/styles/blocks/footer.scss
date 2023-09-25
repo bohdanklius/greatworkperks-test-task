@@ -1,0 +1,209 @@
+.footer {
+    background-color: #e8e8e8;
+    margin-top: 48px;
+
+    &__contents {
+        display: flex;
+        padding: 23px 10px 19px;
+    }
+
+    &__about  {
+        width: 30%;
+    }
+
+    &__payment {
+        width: 30%;
+    }
+
+    &__about-text {
+        font-size: 14px;
+        margin-top: 28px;
+    }
+
+    &__information {
+        width: 40%;
+        padding: 0 30px 20px;
+    }
+    
+    &__logo {
+        max-width: 333px;
+    }
+
+    &__information-list-holder {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__information-list {
+        list-style: none;
+    }
+    
+    &__information-list-item {
+        padding-bottom: 17px;
+    }
+    
+    &__information-list-item a {
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+    }
+
+    &__information-title, 
+    &__payment-title, 
+    &__representatives-title {
+        margin-bottom: 21px;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    &__payment-list {
+        display: flex;
+    }
+
+    &__payment-list-item {
+        list-style: none;
+        margin-right: 5px;
+        margin-bottom: 29px;
+    }
+
+    &__representatives-title-item {
+        margin-bottom: 17px;
+        font-size: 14px;
+        list-style: none;
+    }
+    
+    &__representatives-title-item a {
+        text-decoration: none;
+        color: black;
+    }
+
+    &__inner {
+        font-size: 12px;
+        padding: 7px 10px;
+    }
+
+    &__inner-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__inner-list, &__social-block {
+        display: flex;
+    }
+
+    &__social-block {
+        align-items: center;
+    }
+
+    &__inner-list-item {
+        list-style: none;
+        padding: 0 10px;
+    }
+
+    &__inner-list-item a {
+        text-decoration: none;
+        color: black;
+    }
+
+    &__inner-list:first-child &__inner-list-item:nth-of-type(2) {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    &__inner-icon {
+        width: 27px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .footer {
+        &__contents {
+            flex-direction: column;
+        }
+
+        &__about, 
+        &__information,
+        &__payment  {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 0 22px;
+        }
+
+        &__payment {
+            align-items: normal;
+        }
+
+        &__payment-title {
+            text-align: center;
+        }
+
+        &__payment-list {
+            margin: 0 auto;
+        }
+    
+        &__information-list-holder {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        &__information {
+            padding: 32px 22px;
+            align-items: start;
+        }
+
+        &__information-list-item {
+            border-bottom: 1px solid #828282;
+            padding: 7px 0;
+        }
+        
+        &__information-list-item a,
+        &__representatives-title-item a {
+            font-size: 13px;
+        }
+        
+        &__information-list:nth-child(2) &__information-list-item:last-of-type {
+            border-bottom: none;
+        }
+
+        &__representatives-title-item {
+            padding: 7px 0;
+        }
+
+        &__representatives-title-item:first-child {
+            border-bottom: 1px solid #828282;
+            border-top: 1px solid #828282;
+            margin-bottom: 0;
+        }
+
+        &__information-title, 
+        &__payment-title, 
+        &__representatives-title {
+            font-size: 15px;
+        }
+
+        &__inner-content {
+            flex-direction: column;
+        }
+
+        
+        &__inner-list:first-child {
+            margin-bottom: 13px;
+        }
+
+        &__copyright {
+            margin-bottom: 35px;
+        }
+    }
+}
+
+@media (max-width: 424px) {
+    .footer {
+        
+        &__inner-list-item {
+            padding: 0 5px;
+        }
+    }
+}

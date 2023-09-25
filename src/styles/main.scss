@@ -1,0 +1,50 @@
+@import "./reset";
+@import "fonts";
+@import "./blocks/header.scss";
+@import "./blocks/section.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/search.scss";
+@import "./blocks/dropdown.scss";
+@import "./blocks/categories.scss";
+@import "./blocks/tags.scss";
+@import "./blocks/perk.scss";
+@import "./blocks/choose.scss";
+@import "./blocks/footer.scss";
+
+
+.main-header {
+    margin-top: 48px;
+    font-size: 42px;
+    color: #64a9c7;
+    text-align: center;
+}
+
+.links {
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.link {
+    display: flex;
+    color: #64a9c7;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.link:hover {
+    color: #30356b;
+}
+
+@media (max-width: 768px) {
+    .links  {
+        flex-direction: column;
+    }
+
+    .link {
+        margin-bottom: 24px;
+    }
+}

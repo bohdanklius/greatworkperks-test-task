@@ -1,0 +1,179 @@
+.header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+
+    &__section {
+        padding: 40px 14px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo-search-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    &__buttons {
+        display: flex;
+
+        &--wrapper {
+            display: flex;
+        }
+
+        &--home, &--contacts {
+            margin-left: 20px;
+            display: flex;
+        }
+
+        &--home-image, &--contacts-image {
+           width: 28px;
+        }
+
+        &--sing_up, &--log_in {
+            font-size: 17px;
+            min-height: 33px;
+            min-width: 107px;
+            padding: 5px 17px;
+            margin-left: 9px;
+            font-weight: 300;
+            border-radius: 13px;
+            cursor: pointer;
+            transition: 0.5s;
+
+        }
+
+        &--sing_up {
+            color: #fff;
+            background-color: #30356c;
+            border: 1px solid #30356c;
+        }
+
+        &--sing_up:hover {
+            background-color: #1d2041;
+            border: 1px solid #1d2041;
+        }
+
+        &--log_in {
+            color: #30356c;
+            background-color: #fff;
+            border: 1px solid #30356c;
+        }
+
+        &--log_in:hover {
+            color: #fff;
+            background-color: #30356c;
+            border: 1px solid #30356c;
+        }
+
+        &--toggle-holder {
+            display: none;
+        }
+
+        &--contacts-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            visibility: hidden;
+            opacity: 0;
+            z-index: 1;
+            transition: 3s ease, opacity .3s ease, visibility .3s ease;;
+        }
+
+        &--contacts-wrapper {
+            position: relative;
+            display: flex;
+        }
+
+        &--contacts-dropdown {
+            width: 268px;
+            box-shadow: 0 0 16px 0 rgba(0, 0, 0, .35);
+            margin: 15px 0 0 20px;
+        }
+
+        &--contacts-wrapper:hover &--contacts-dropdown {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+}
+
+@media (max-width: 1199px) {
+    .header {
+        padding: 0 60px;
+        box-shadow: 1px 0 20px rgba(0, 0, 0, .3);
+
+        &__buttons--contacts-dropdown {
+            right: 0;
+            left: auto;
+        }
+
+        &__buttons--wrapper {
+            display: none;
+        }
+
+        &__buttons--toggle-holder {
+            margin-left: 20px;
+            display: flex;
+        } 
+
+        &__buttons--toggle-holder .navbar-toggler {
+            display: flex;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        &__buttons--toggle-holder .navbar-toggler-icon {
+            display: flex;
+        }
+
+        &__buttons--toggle-holder img {
+            width: 32px;
+        }
+    }
+}
+
+@media (max-width: 1125px) {
+    .header {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        box-shadow: none;
+
+        &__logo-search-wrapper {
+            align-items: start;
+            flex-direction: column;
+        }
+
+        &__buttons {
+            flex-direction: column;
+        }
+        
+        &__buttons--home {
+            display: none;
+        }
+
+        &__logo-search-wrapper {
+            width: 100%;
+        }
+
+        &__buttons--toggle-holder {
+            margin-top: 10px;
+        }
+    }
+}

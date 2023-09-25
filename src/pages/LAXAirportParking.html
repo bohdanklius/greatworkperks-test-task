@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/main.scss">
+    <script src="../scripts/main.js" defer></script>
+</head>
+<body>
+    <header id="header" class="header">
+        <section class="header__section section">
+            <div class="header__logo-search-wrapper">
+                <div class="section__logo logo">
+                    <a class="logo__link" title="Great Work Pears" href="#">
+                        <img class="logo__image" src="../images/header-logo.webp" alt="Great Work Pears" title="Great Work Pears">
+                    </a>
+                </div>
+                <form class="search" role="search">
+                    <button class="search__button">
+                        <img src="/src/images/icons/search.svg" alt="search" title="search">
+                    </button>
+                    <input type="text" class="search__input" placeholder="Search..">
+                </form>
+
+            </div>
+            <div class="header__buttons">
+                <a class="header__buttons--home" title="home" href="#">
+                    <img class="header__buttons--home-image" src="/src/images/icons/home.svg" alt="home" title="home">
+                </a>
+
+                <div class="header__buttons--contacts-wrapper">
+                    <a class="header__buttons--contacts" title="phone" href="tel:888-295-7375">
+                        <img class="header__buttons--contacts-image" src="/src/images/icons/phone.svg" alt="phone" title="phone">
+                    </a>
+                    
+                    <div class="header__buttons--contacts-dropdown">
+                        <p class="dropdown__header">Contact Us</p>
+                        <ul class="dropdown__header--list">
+                            <li class="dropdown__header--list-item">
+                                <div class="dropdown__header--list-item-header">
+                                    <img src="/src/images/icons/phone.svg" alt="phone" title="phone">
+                                    <p>Call Or Text</p>
+                                </div>
+                                <ul class="dropdown__header--list-sec">
+                                    <li class="dropdown__header--list-item-sec">
+                                        Call Us - <a class="dropdown__header--list-link" title="8882957375" href="tel:8882957375">8882957375</a>
+                                    </li>
+                                    <li class="dropdown__header--list-item-sec">
+                                        Text Us - <a class="dropdown__header--list-link" title="888-295-7375" href="tel:8882957375">888-295-7375</a>
+                                    </li>
+                                    <li class="dropdown__header--list-item-sec">
+                                        7am – 10pm PST (7 Days)
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown__header--list-item">
+                                <div class="dropdown__header--list-item-header">
+                                    <img src="/src/images//icons/mail.svg" alt="mail" title="mail">
+                                    <p>Email</p>
+                                </div>
+                                <ul class="dropdown__header--list-sec">
+                                    <li class="dropdown__header--list-item-sec">
+                                        <a class="dropdown__header--list-link" title="help@greatworkperks" href="mail:help@greatworkperks.com">help@greatworkperks.com</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown__header--list-item">
+                                <div class="dropdown__header--list-item-header">
+                                    <img src="/src/images/icons/phone.svg" alt="phone" title="phone">
+                                    <p>Location</p>
+                                </div>
+                                <ul class="dropdown__header--list-sec">
+                                    <li class="dropdown__header--list-item-sec">
+                                        3857 Birch St Suite 411,
+                                        <br>Newport Beach, CA
+                                        <br>92660
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown__header--list-item">
+                                <div class="dropdown__header--list-item-header">
+                                    <p>FAQ</p>
+                                </div>
+                                
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="header__buttons--toggle-holder">
+                    <button class="navbar-toggler">
+                        <img src="/src/images/icons/burger-menu.svg" alt="menu" title="menu">
+                    </button>
+                </div>
+                <div class="header__buttons--wrapper">
+                    <button class="header__buttons--sing_up">Sign Up</button>
+                    <button class="header__buttons--log_in">Log In</button>
+                </div>
+            </div>
+        </section>
+        <section class="categories">
+            <div class="categories__section">
+                <div class="categories__buttons">
+                    <div class="categories__buttons--wrapper">
+                        <button class="categories__buttons--sing_up">Sign Up</button>
+                        <button class="categories__buttons--log_in">Log In</button>
+                    </div>
+                    <button class="categories__buttons--close">X</button>
+                </div>
+                <ul class="categories__list">
+                    <li class="categories__list--item">
+                        Everyday Savings 
+                        <img src="/src/images/icons/arrow-down.svg" alt="arrow-down" title="arrow-down">
+                        <div class="categories__dropdown">
+                            <ul class="categories__dropdown--list">
+                                <li class="categories__dropdown--list-item">
+                                    <div class="categories__dropdown--list-item-wrapper">
+                                        <p class="categories__dropdown--list-item-header">
+                                            Apparel
+                                        </p>
+                                        <ul class="categories__dropdown--list-sec">
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Forever 21" href="#">Forever 21</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Nike" href="#">Nike</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Oakley" href="#">Oakley</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Macy's" href="#">Macy's</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Champion" href="#">Champion</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Skechers" href="#">Skechers</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Ray-Ban" href="#">Ray-Ban</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Blue Nile" href="#">Blue Nile</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="categories__dropdown--list-item">
+                                    <div class="categories__dropdown--list-item-wrapper">
+                                        <p class="categories__dropdown--list-item-header">
+                                            Electronics
+                                        </p>
+                                        <ul class="categories__dropdown--list-sec">
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Samsung" href="#">Samsung</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Sharper Image" href="#">Sharper Image</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Logitech" href="#">Logitech</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Lenovo" href="#">Lenovo</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Acer" href="#">Acer</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Microsoft Office" href="#">Microsoft Office</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Sonos" href="#">Sonos</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Canon" href="#">Canon</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="categories__dropdown--list-item">
+                                    <div class="categories__dropdown--list-item-wrapper">
+                                        <p class="categories__dropdown--list-item-header">
+                                            Food & Drink
+                                        </p>
+                                        <ul class="categories__dropdown--list-sec">
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Blue Apron" href="#">Blue Apron</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Costco" href="#">Costco</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Sam's Club" href="#">Sam's Club</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Postmates" href="#">Postmates</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Wine.com" href="#">Wine.com</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Edible Arrangements" href="#">Edible Arrangements</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="KIND Snacks" href="#">KIND Snacks</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Green Chef" href="#">Green Chef</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="categories__dropdown--list-item">
+                                    <div class="categories__dropdown--list-item-wrapper">
+                                        <p class="categories__dropdown--list-item-header">
+                                            Home
+                                        </p>
+                                        <ul class="categories__dropdown--list-sec">
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Whirlpool" href="#">Whirlpool</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="1-800 Pack Rat" href="#">1-800 Pack Rat</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="PODS Storage" href="#">PODS Storage</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="SunPower Solar" href="#">SunPower Solar</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Vivint Smart Home" href="#">Vivint Smart Home</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Samsung Appliances" href="#">Samsung Appliances</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Google Nest" href="#">Google Nest</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Guaranteed Rate" href="#">Guaranteed Rate</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="categories__dropdown--list-item">
+                                    <div class="categories__dropdown--list-item-wrapper">
+                                        <p class="categories__dropdown--list-item-header">
+                                            Pets
+                                        </p>
+                                        <ul class="categories__dropdown--list-sec">
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Spot Pet" href="#">Spot Pet</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Chewy" href="#">Chewy</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="BarkBox" href="#">BarkBox</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Cat Person" href="#">Cat Person</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Rover" href="#">Rover</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Farmer's Dog" href="#">Farmer's Dog</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="PetSmart" href="#">PetSmart</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                               <a title="Nationwide Pet" href="#">Nationwide Pet</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="categories__dropdown--list-item">
+                                    <div class="categories__dropdown--list-item-wrapper">
+                                        <p class="categories__dropdown--list-item-header">
+                                            More Categories
+                                        </p>
+                                        <ul class="categories__dropdown--list-sec">
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Automotive" href="#">Automotive</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Beauty & Skincare" href="#">Beauty & Skincare</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Education" href="#">Education</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Financial Wellness" href="#">Financial Wellness</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Flowers & Gifts" href="#">Flowers & Gifts</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Insurance" href="#">Insurance</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Sports" href="#">Sports</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Tax Prep" href="#">Tax Prep</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="categories__dropdown--view-all">
+                                <p class="">SAVE BIG ON TOP BRANDS</p>
+                                <a class="view-all" title="View All" href="#">
+                                    View All 
+                                    <span class="">
+                                        <img class="arrow-right-image" src="/src/images/icons/arrow-right.svg" alt="arrow-right" title="arrow-right">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="categories__list--item">
+                        Theme Parks & Family Fun
+                        <img src="/src/images/icons/arrow-down.svg" alt="arrow-down" title="arrow-down">
+                        <div class="categories__dropdown">
+                            <ul class="categories__dropdown--list">
+                                <li class="categories__dropdown--list-item">
+                                    <div class="categories__dropdown--list-item-wrapper">
+                                        <p class="categories__dropdown--list-item-header">
+                                            Theme Parks
+                                        </p>
+                                        <ul class="categories__dropdown--list-sec">
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Universal Studios" href="#">Universal Studios</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Disneyland" href="#">Disneyland</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Legoland" href="#">Legoland</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="SeaWorld" href="#">SeaWorld</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Six Flags" href="#">Six Flags</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Knott's Berry Farm" href="#">Knott's Berry Farm</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Nickelodeon Universe" href="#">Nickelodeon Universe</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Hershey Park" href="#">Hershey Park</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="categories__dropdown--list-item">
+                                    <div class="categories__dropdown--list-item-wrapper">
+                                        <p class="categories__dropdown--list-item-header">
+                                            Water Parks
+                                        </p>
+                                        <ul class="categories__dropdown--list-sec">
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Hurricane Harbor" href="#">Hurricane Harbor</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Legoland Waterpark" href="#">Legoland Waterpark</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Sesame Place" href="#">Sesame Place</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Schlitterbahn" href="#">Schlitterbahn</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="California's Great America" href="#">California's Great America</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Knott's Soak City" href="#">Knott's Soak City</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Raging Waters" href="#">Raging Waters</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Aquatica" href="#">Aquatica</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="categories__dropdown--list-item">
+                                    <div class="categories__dropdown--list-item-wrapper">
+                                        <p class="categories__dropdown--list-item-header">
+                                            Zoos & Aquariums
+                                        </p>
+                                        <ul class="categories__dropdown--list-sec">
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="San Diego Zoo" href="#">San Diego Zoo</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Aquarium of the Pacific" href="#">Aquarium of the Pacific</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="San Antonio Zoo" href="#">San Antonio Zoo</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Gatorland" href="#">Gatorland</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Miami Zoo" href="#">Miami Zoo</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="San Diego Safari Park" href="#">San Diego Safari Park</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Bronx Zoo" href="#">Bronx Zoo</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="SeaLife Aquarium" href="#">SeaLife Aquarium</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="categories__dropdown--list-item">
+                                    <div class="categories__dropdown--list-item-wrapper">
+                                        <p class="categories__dropdown--list-item-header">
+                                            Cruises & Tours
+                                        </p>
+                                        <ul class="categories__dropdown--list-sec">
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Catalina Express" href="#">Catalina Express</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Flagship Cruises" href="#">Flagship Cruises</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="City Experiences" href="#">City Experiences</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Dana Wharf" href="#">Dana Wharf</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Big Bus Tours" href="#">Big Bus Tours</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Warner Bros Studio Tours" href="#">Warner Bros Studio Tours</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="" href="#">Old Town Trolley Tours</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Grapeline Wine Tours" href="#">Grapeline Wine Tours</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="categories__dropdown--list-item">
+                                    <div class="categories__dropdown--list-item-wrapper">
+                                        <p class="categories__dropdown--list-item-header">
+                                            Museums & More
+                                        </p>
+                                        <ul class="categories__dropdown--list-sec">
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="MOMAt" href="#">MOMAt</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Medieval Times" href="#">Medieval Times</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Madame Tussauds" href="#">Madame Tussauds</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Pirates Dinner Adventure" href="#">Pirates Dinner Adventure</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="USS Midway Museum" href="#">USS Midway Museum</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Escape Game" href="#">Escape Game</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="One World Observatory" href="#">One World Observatory</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                               <a title="SUMMIT One Vanderbilt" href="#">SUMMIT One Vanderbilt</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="categories__dropdown--view-all">
+                                <p class="">SAVE UP TO 55% ON THEME PARKS & ATTRACTIONS</p>
+                                <a class="view-all" title="View All" href="#">
+                                    View All 
+                                    <span class="">
+                                        <img class="arrow-right-image" src="/src/images/icons/arrow-right.svg" alt="arrow-right" title="arrow-right">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="categories__list--item">
+                        Hotels & Travel  
+                        <img src="/src/images/icons/arrow-down.svg" alt="arrow-down" title="arrow-down">
+                        <div class="categories__dropdown small">
+                            <ul class="categories__dropdown--list">
+                                <li class="categories__dropdown--list-item">
+                                    <div class="categories__dropdown--list-item-wrapper">
+                                        <ul class="categories__dropdown--list-sec">
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Hotels" href="#">Hotels</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Rental Cars" href="#">Rental Cars</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Flights" href="#">Flights</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Go City" href="#">Go City</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="City PASS" href="#">City PASS</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Airport Parking" href="#">Airport Parking</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Great Wolf Lodge" href="#">Great Wolf Lodge</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="categories__list--item">
+                        Health & Wellness  
+                        <img src="/src/images/icons/arrow-down.svg" alt="arrow-down" title="arrow-down">
+                        <div class="categories__dropdown small">
+                            <ul class="categories__dropdown--list">
+                                <li class="categories__dropdown--list-item">
+                                    <div class="categories__dropdown--list-item-wrapper">
+                                        <ul class="categories__dropdown--list-sec">
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Gym Memberships" href="#">Gym Memberships</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Fitness Videos" href="#">Fitness Videos</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="BetterHelp" href="#">BetterHelp</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Aura" href="#">Aura</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Noom" href="#">Noom</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Lululemon Studio" href="#">Lululemon Studio</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Nutrisystem" href="#">Nutrisystem</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Echelon Fitness" href="#">Echelon Fitness</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="categories__list--item">
+                        Movie Tickets  
+                        <img src="/src/images/icons/arrow-down.svg" alt="arrow-down" title="arrow-down">
+                        <div class="categories__dropdown small">
+                            <ul class="categories__dropdown--list">
+                                <li class="categories__dropdown--list-item">
+                                    <div class="categories__dropdown--list-item-wrapper">
+                                        <ul class="categories__dropdown--list-sec">
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="AMC" href="#">AMC</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Cinemark" href="#">Cinemark</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Look Cinemas" href="#">Look Cinemas</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Regal" href="#">Regal</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Regency" href="#">Regency</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="categories__list--item">
+                        Sports & Concerts  
+                        <img src="/src/images/icons/arrow-down.svg" alt="arrow-down" title="arrow-down">
+                        <div class="categories__dropdown small">
+                            <ul class="categories__dropdown--list">
+                                <li class="categories__dropdown--list-item">
+                                    <div class="categories__dropdown--list-item-wrapper">
+                                        <ul class="categories__dropdown--list-sec">
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Sports" href="#">Sports</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Concerts" href="#">Concerts</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Theater" href="#">Theater</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="categories__list--item">
+                        Our Perk <br>Program  
+                        <img class="categories__list--arrow-down" src="/src/images/icons/arrow-down.svg" alt="arrow-down" title="arrow-down">
+                        <div class="categories__dropdown small">
+                            <ul class="categories__dropdown--list">
+                                <li class="categories__dropdown--list-item">
+                                    <div class="categories__dropdown--list-item-wrapper">
+                                        <ul class="categories__dropdown--list-sec">
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Company Sign Up" href="#">Company Sign Up</a>
+                                            </li>
+                                            <li class="categories__dropdown--list-item-sec">
+                                                <a title="Schedule a Demo" href="#">Schedule a Demo</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="tags">
+            <div class="tags__bar">
+                <ul class="tags__bar-list">
+                    <li><a title="Categories" href="#" id="mobileCategories" class="tags__bar-list-item">Categories</a></li>
+                    <li><a title="Everyday Savings" href="#" class="tags__bar-list-item">Everyday Savings</a></li>
+                    <li><a title="Theme Parks" href="#" class="tags__bar-list-item">Theme Parks</a></li>
+                    <li><a title="Hotels" class="tags__bar-list-item" href="#">Hotels</a></li>
+                    <li><a title="Rental Cars" class="tags__bar-list-item" href="#">Rental Cars</a></li>
+                    <li><a title="Sports" href="#" class="tags__bar-list-item">Sports</a></li>
+                    <li><a title="Concerts" href="#" class="tags__bar-list-item">Concerts</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <main id="main">
+        <section class="section perk__section">
+            <h2 class="perk__header">
+                QuikPark LAX Airport Parking
+            </h2>
+            <div class="perk__wrapper">
+                <div class="perk__left">
+                    <div class="perk__code">
+                        <h3 class="perk__code--header">
+                            Offer Code:
+                        </h3>
+                        <div class="perk__code--field">
+                            <input class="perk__code--value" type="text" id="promocode" value="GWP" readonly>
+                            <button class="perk__code--button" id="copyButton">COPY</button>
+                        </div>
+                    </div>
+                    <div class="perk__about">
+                        <img class="perk__image" src="/src/images/QuikPark-Los-Angeles-Airport.webp" alt="QuikPark LAX Airport Parking" title="QuikPark LAX Airport Parking">
+                        <h4 class="perk__about--header">
+                            About QuikPark LAX Airport Parking
+                        </h4>
+                        <p class="perk__about--text">
+                            QuikPark is Los Angeles International Airport's newest and closest parking choice. With over 2,500 parking spaces, busy business travelers can choose from either self or valet parking service. A large fleet of new shuttle buses provide transportation to and from LAX approximately every 10 minutes.   
+                            <br>
+                            <br>
+                            We understand you have places to go, and QuikPark LAX will help get you on your way! QuikPark Los Angeles Airport is a customer-oriented quality conscious company. Customer satisfaction is our top priority.
+                        </p>
+                        <p class="perk__about--contact">
+                            QuikPark LAX <br>
+                            9821 Vicksburg Ave. <br>
+                            California,Los Angeles,90045 <br> 
+                            (310) 435-8450
+                        </p>
+                    </div>
+                </div>
+                <div class="perk__right">
+                    <h2 class="perk__info-box">
+                        SAVE UP TO 40%
+                    </h2>
+                    <div class="perk__cards">
+                        <div class="perk__card">
+                            <div class="perk__card--wrapper">
+                                <div class="perk__card--title">  
+                                    <h3 class="perk__card--title-text">VIP Covered Self Park</h3>
+                                    <h4 class="perk__card--title-code">Use Code: GWP</h4>
+                                </div>
+                                <div class="perk__card--prices">
+                                    <p class="perk__card--prices-old">$28.55</p>
+                                    <p class="perk__card--prices-new">$16.95/day</p>
+                                </div>
+                            </div>
+                            <div class="perk__card--button">
+                                <button class="perk__card--button-get-deal">GET DEAL NOW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section choose__section">
+            <h2 class="choose__header">
+                Why Choose GreatWorkPerks?
+            </h2>
+            <p class="choose__text">
+                At GreatWorkPerks, we're your gateway to exclusive savings and unmatched benefits. With a diverse range of discounts tailored to your interests, our platform offers seamless navigation and personalized recommendations. We've curated partnerships with renowned brands, ensuring you access deals unavailable elsewhere. 
+                <br>
+                <br>
+                Our commitment to transparency and authenticity builds trust, and our engaging community amplifies your savings journey. Whether you're enhancing your well-being, planning a night out, or elevating employee benefits, GreatWorkPerks empowers you to enjoy life's pleasures while making the most of your hard-earned money. Join us and discover a world of meaningful savings that align with your lifestyle.
+            </p>
+        </section>
+    </main>
+    <footer id="footer">
+        <section class="footer footer__section">
+            <div class="section">
+                <div class="footer__contents">
+                    <div class="footer__about">
+                        <img class="footer__logo" src="/src/images/header-logo.webp" alt="Great Work Pears" title="Great Work Pears">
+                        <p class="footer__about-text">
+                            Great Work Pears provides a free online employee discount program to over 10,000 companies and volunteer organizations. The quality of our perks is unmatched. Our program is available to all organizations both big and small.
+                        </p>
+                    </div>
+                    <div class="footer__information">
+                        <h3 class="footer__information-title">Information</h3>
+                            <div class="footer__information-list-holder">
+                                <ul class="footer__information-list">
+                                    <li class="footer__information-list-item"><a title="About Us" href="#">About Us</a></li>
+                                    <li class="footer__information-list-item"><a title="Contact Us" href="#">Contact Us</a></li>
+                                    <li class="footer__information-list-item"><a title="Theme Parks & Attractions" href="#">Theme Parks & Attractions</a></li>
+                                    <li class="footer__information-list-item"><a title="Everyday Savings" href="#">Everyday Savings</a></li>
+                                </ul>
+                                <ul class="footer__information-list">
+                                    <li class="footer__information-list-item"><a title="List Your Perk" href="#">List Your Perk</a></li>
+                                    <li class="footer__information-list-item"><a title="Testimonials" href="#">Testimonials</a></li>
+                                    <li class="footer__information-list-item"><a title="Our Perk Program" href="#">Our Perk Program</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="footer__payment">
+                        <h3 class="footer__payment-title">Flexible, Secure Payment Options</h3>
+                        <ul class="footer__payment-list">
+                            <li class="footer__payment-list-item">
+                                <img class="" src="/src/images/payment/Visa.webp" alt="Visa" title="Visa"  />
+                            </li>
+                            <li class="footer__payment-list-item">
+                                <img class="" src="/src/images/payment/MasterCard.webp" alt="MasterCard" title="MasterCard"  />
+                            </li>
+                            <li class="footer__payment-list-item">
+                                <img class="" src="/src/images/payment/Discover.webp" alt="Discover" title="Discover" />
+                            </li>
+                            <li class="footer__payment-list-item">
+                                <img class="" src="/src/images/payment/AmericanExpress.webp" alt="AmericanExpress" title="AmericanExpress"  />
+                            </li>
+                            
+                        </ul>
+                        <h3 class="footer__representatives-title">HR Representatives</h3>
+                        <ul class="footer__representatives-list">
+                            <li class="footer__representatives-title-item"><a title="Schedule A Demo" href="https://calendly.com/d/2q4-q6g-4jr/great-work-perks-demo" target="_blank">Schedule A Demo</a></li>
+                            <li class="footer__representatives-title-item"><a title="Sign Up Your Company" href="/our-perk-program">Sign Up Your Company</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer__inner">
+            <div class="section">
+                <div class="footer__inner-content">
+                    <ul class="footer__inner-list">
+                        <li class="footer__inner-list-item"><a title="Terms of Use" href="/terms-of-use">Terms of Use</a></li>
+                        <li class="footer__inner-list-item"><a title="Privacy Notice" href="/privacy-notice">Privacy Notice</a></li>
+                        <li class="footer__inner-list-item"><a title="Lowest Prices Guaranteed" href="/lowest-prices-guaranteed">Lowest Prices Guaranteed</a></li>
+                    </ul>
+                    <span class="footer__copyright">&copy; Greatworkperks. All rights reserved.</span>
+                    <div class="footer__social-block">
+                        <span class="title">Follow us</span>
+                        <ul class="footer__inner-list">
+                            <li class="footer__inner-list-item">
+                                <a title="Facebook" target="_blank" href="https://www.facebook.com/gwperks">
+                                    <img class="footer__inner-icon" src="/src/images/icons/facebook.svg" alt="Facebook" title="Facebook">    
+                                </a>
+                            </li>
+                            <li class="footer__inner-list-item">
+                                <a title="Twitter" target="_blank" href="https://twitter.com/greatworkperks">
+                                    <img class="footer__inner-icon" src="/src/images/icons/twitter.svg" alt="Twitter" title="Twitter">    
+                                </a>
+                            </li>
+                            <li class="footer__inner-list-item">
+                                <a title="Google Plus" target="_blank" href="https://gmail.com/">
+                                    <img class="footer__inner-icon" src="/src/images/icons/google-plus.svg" alt="Google Plus" title="Google Plus">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
